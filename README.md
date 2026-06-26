@@ -76,6 +76,7 @@ Pastikan sudah terinstall:
 - **Aplikasi Expo Go** (Android / iOS)
 
 # Struktur Folder
+```
 app/
 │
 ├── (auth)
@@ -99,6 +100,7 @@ services/
 ├── firebase.ts
 ├── authService.ts
 └── penerimaService.ts
+```
 
 ## 🚀 Cara Menjalankan Proyek
 **Clone repository ini**
