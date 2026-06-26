@@ -16,7 +16,7 @@ Tampilan antarmuka:
 | <img src="assets/images/report penerima.jpeg" width="400"> | <img src="assets/images/edit.jpeg" width="400"> | <img src="assets/images/hapus.jpeg" width="400"> | <img src="assets/images/profile admin.jpeg" width="400">
 
 Tampilan Database: 
-| Screenshot | Screenshot |
+| Admin | Penerima |
 |-----------|------------|
 <img src="assets/images/admin.png" width="400"> | <img src="assets/images/data penerima.png" width="400"> 
 |
