@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "688291194204",
+    "project_id": "bantuan-desa",
+    "storage_bucket": "bantuan-desa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688291194204:android:0329fe1e38f034c8944d99",
+        "android_client_info": {
+          "package_name": "com.desa.banruan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbRplDF0yDaQE-sDcwW1t0mnsf54W5EPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

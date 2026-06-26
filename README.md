@@ -1,50 +1,161 @@
-# Welcome to your Expo app 👋
+# 🏘️ Sistem Input Data Penerima Bantuan
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplikasi mobile berbasis React Native Expo yang digunakan untuk mengelola dan menginput data penerima bantuan sosial di tingkat desa. Aplikasi ini memudahkan petugas desa dalam melakukan pendataan, pengelolaan, dan monitoring penerima bantuan secara digital menggunakan Firebase sebagai backend.
 
-## Get started
+## 📱 Screenshot Aplikasi
 
-1. Install dependencies
+Tampilan antarmuka:
 
-   ```bash
-   npm install
-   ```
+| Screenshot | Screenshot |
+|-----------|------------|
+<img src="assets/images/login.jpeg" width="400"> | <img src="assets/images/home 1.jpeg" width="400"> 
+| <img src="assets/images/input.jpeg" width="400"> | <img src="assets/images/notif berhasil.jpeg" width="400">
+| <img src="assets/images/report penerima.jpeg" width="400"> | <img src="assets/images/edit.jpeg" width="400">
+| <img src="assets/images/hapus.jpeg" width="400"> | <img src="assets/images/profile admin.jpeg" width="400">
 
-2. Start the app
+Tampilan Database: 
+| Screenshot | Screenshot |
+|-----------|------------|
+<img src="assets/images/admin.png" width="400"> | <img src="assets/images/data penerima.png" width="400"> 
+|
 
-   ```bash
-   npx expo start
-   ```
+## Fitur Utama
 
-In the output, you'll find options to open the app in a
+**🔐 Autentikasi**
+***Login Administrator***
+***Logout Administrator***
+***Session Login Firebase***
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+**Dashboard**
+***Menampilkan informasi umum sistem seperti info dana dan info penerima nya***
+***SAkses cepat ke menu utama yaitu input dan data laporan***
+***Detail informasi***
+***Komoditas sembako utama***
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+**Manajemen Penerima Bantuan**
+***Tambah data penerima bantuan***
+***Lihat daftar penerima bantuan***
+***Edit data penerima bantuan***
+***Hapus data penerima bantuan***
+***Detail data penerima bantuan***
 
-## Get a fresh project
+## Data Penerima Bantuan
 
-When you're ready, run:
+**Data yang disimpan meliputi:**
+- NIK
+- Nama Lengkap
+- Alamat
+- RT
+- RW
+- Jenis Kelamin
+- Jenis Bantuan
+- Status Penerima
 
+# Teknologi yang Digunakan
+**Frontend**
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+
+**Backend**
+- Firebase Authentication
+- Cloud Firestore Database
+- Penyimpanan Data
+- Firebase Firestore (NoSQL)
+
+## 🚀 Cara Menjalankan Aplikasi
+
+### 1️⃣ Persiapan Awal
+Pastikan sudah terinstall:
+- **Node.js** (versi LTS)
+- **NPM**
+- **Expo CLI**
+- **Aplikasi Expo Go** (Android / iOS)
+
+# Struktur Folder
+app/
+│
+├── (auth)
+│   └── login.tsx
+│
+├── (tabs)
+│   ├── index.tsx
+│   ├── penerima.tsx
+│   ├── profile.tsx
+│   └── report.tsx
+│
+├── penerima
+│   ├── tambah.tsx
+│   └── [id].tsx
+│
+├── _layout.tsx
+└── index.tsx
+
+services/
+│
+├── firebase.ts
+├── authService.ts
+└── penerimaService.ts
+
+## 🚀 Cara Menjalankan Proyek
+**Clone repository ini**
 ```bash
-npm run reset-project
+git clone https://github.com/username/sistem-bantuan-desa.git
+cd sistem-bantuan-desa
 ```
+Install Dependency
+```bash
+npm install
+```
+Menjalankan Project
+```bash
+npx expo start
+```
+Menjalankan dengan Cache Bersih
+```bash
+npx expo start -c
+```
+Konfigurasi Firebase
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Buat file konfigurasi Firebase pada:
 
-## Learn more
+services/firebase.ts
 
-To learn more about developing your project with Expo, look at the following resources:
+Isi konfigurasi sesuai project Firebase yang digunakan.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Firestore Rules (Development)
+rules_version = '2';
 
-## Join the community
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
 
-Join our community of developers creating universal apps.
+# Catatan:
+Rules di atas hanya digunakan selama tahap pengembangan. Untuk produksi, gunakan aturan keamanan yang lebih ketat.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Tujuan Aplikasi
+
+Aplikasi ini dibuat untuk membantu pemerintah desa dalam:
+
+- Pendataan penerima bantuan sosial
+- Monitoring distribusi bantuan
+- Digitalisasi administrasi desa
+- Mengurangi kesalahan pencatatan data manual
+- Mempermudah pencarian data penerima bantuan
+
+# Pengembang
+
+Nama Proyek : Sistem Bantuan Desa
+
+Platform : Android
+
+Framework : React Native Expo
+
+Database : Firebase Firestore
+
+Authentication : Firebase Authentication
