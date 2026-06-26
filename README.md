@@ -75,7 +75,7 @@ Pastikan sudah terinstall:
 - **Expo CLI**
 - **Aplikasi Expo Go** (Android / iOS)
 
-# Struktur Folder
+# Struktur Folder yang Penting Saja
 ```
 app/
 │
