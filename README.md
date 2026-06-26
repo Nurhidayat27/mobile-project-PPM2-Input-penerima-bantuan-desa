@@ -6,17 +6,11 @@ Aplikasi mobile berbasis React Native Expo yang digunakan untuk mengelola dan me
 
 Tampilan antarmuka:
 
-| Login Admin | Dashboard |
-|-----------|------------|
+| Login Admin | Dashboard | INput Data | Notifikasi Berhasil | Repoort Penerima | Form Edit | Form Hapus | Profile Admin |
+|-----------|------------|-----------|------------|-----------|------------|-----------|------------|
 <img src="assets/images/login.jpeg" width="400"> | <img src="assets/images/home 1.jpeg" width="400"> 
-| Login Admin | Dashboard |
-|-----------|------------|
 | <img src="assets/images/input.jpeg" width="400"> | <img src="assets/images/notif berhasil.jpeg" width="400">
-| Login Admin | Dashboard |
-|-----------|------------|
 | <img src="assets/images/report penerima.jpeg" width="400"> | <img src="assets/images/edit.jpeg" width="400">
-| Login Admin | Dashboard |
-|-----------|------------|
 | <img src="assets/images/hapus.jpeg" width="400"> | <img src="assets/images/profile admin.jpeg" width="400">
 
 Tampilan Database: 
