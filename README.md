@@ -123,7 +123,7 @@ npx expo start -c
 Konfigurasi Firebase
 
 # Buat file konfigurasi Firebase pada:
-
+```
 services/firebase.ts
 
 Isi konfigurasi sesuai project Firebase yang digunakan.
@@ -138,7 +138,7 @@ service cloud.firestore {
     }
   }
 }
-
+```
 # Catatan:
 Rules di atas hanya digunakan selama tahap pengembangan. Untuk produksi, gunakan aturan keamanan yang lebih ketat.
 
@@ -153,7 +153,7 @@ Aplikasi ini dibuat untuk membantu pemerintah desa dalam:
 - Mempermudah pencarian data penerima bantuan
 
 # Pengembang
-
+```
 Nama Proyek : Sistem Bantuan Desa
 
 Platform : Android
@@ -163,3 +163,4 @@ Framework : React Native Expo
 Database : Firebase Firestore
 
 Authentication : Firebase Authentication
+```
