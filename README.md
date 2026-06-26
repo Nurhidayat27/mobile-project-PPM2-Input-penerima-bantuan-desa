@@ -6,14 +6,14 @@ Aplikasi mobile berbasis React Native Expo yang digunakan untuk mengelola dan me
 
 Tampilan antarmuka:
 
-| Login Admin | Dashboard | Input Data | Notifikasi Berhasil |
-|-----------|------------|----------|------------|
-<img src="assets/images/login.jpeg" width="400"> | <img src="assets/images/home 1.jpeg" width="400"> 
-| <img src="assets/images/input.jpeg" width="400"> | <img src="assets/images/notif berhasil.jpeg" width="400">
-| Report Penenrima | Edit | Hapus | Profile Admin |
-|-----------|------------|----------|------------|
-| <img src="assets/images/report penerima.jpeg" width="400"> | <img src="assets/images/edit.jpeg" width="400">
-| <img src="assets/images/hapus.jpeg" width="400"> | <img src="assets/images/profile admin.jpeg" width="400">
+## Screenshot
+| Login | Dashboard| Input Penerima | Notifikasi Berhasil |
+|-----------|------------|------------|
+|<img src="assets/images/login.jpeg" width="400"> | <img src="assets/images/home 1.jpeg" width="400"> | <img src="assets/images/input.jpeg" width="400"> | <img src="assets/images/notif berhasil.jpeg" width="400"> | 
+
+| Report Penerima | Edit | Hapus | Profile Admin |
+|------------|------------|------------|------------|
+| <img src="assets/images/report penerima.jpeg" width="400"> | <img src="assets/images/edit.jpeg" width="400"> | <img src="assets/images/hapus.jpeg" width="400"> | <img src="assets/images/profile admin.jpeg" width="400">
 
 Tampilan Database: 
 | Screenshot | Screenshot |
