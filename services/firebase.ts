@@ -5,7 +5,7 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBbRplDF0yDaQE-sDcwW1t0mnsf54W5EPI",
+  apiKey: "Api Key anda",
   authDomain: "bantuan-desa.firebasestorage.app",
   projectId: "bantuan-desa",
   storageBucket: "bantuan-desa.firebasestorage.app",
